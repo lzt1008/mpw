@@ -172,10 +172,10 @@ pub fn ui(f: &mut Frame, app: &App) {
     render!(f, "P CPU", if p_cpu, Color::LightCyan, cyan);
     render!(f, "GPU SRAM", if gpu_sram, Color::LightBlue, blue);
     render!(f, "DRAM", if dram, Color::LightMagenta, magenta);
-    render!(f, "ANE", if ane, Color::LightYellow, yellow);
-    render!(f, "AVE", if ave, Color::LightYellow, yellow);
-    render!(f, "ISP", if isp, Color::LightYellow, yellow);
-    render!(f, "PCIe", if pcie, Color::LightYellow, yellow);
+    render!(f, "ANE", if ane, Color::LightMagenta, magenta);
+    render!(f, "AVE", if ave, Color::LightMagenta, magenta);
+    render!(f, "ISP", if isp, Color::LightMagenta, magenta);
+    render!(f, "PCIe", if pcie, Color::LightMagenta, magenta);
 }
 
 pub fn run_main(rx: Receiver<Power>) -> io::Result<()> {
