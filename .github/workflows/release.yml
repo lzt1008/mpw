@@ -82,4 +82,4 @@ jobs:
         run: |
           git add .
           git commit -m "chore: update tpw.rb for release ${{ needs.release.outputs.tag_name }}"
-          git push origin master
+          git push origin main
