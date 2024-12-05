@@ -73,8 +73,8 @@ jobs:
 
       - name: Update tpw.rb
         run: |
-          sed -i '' 's/version ".*"/version "${{ needs.release.outputs.major }}.${{ needs.release.outputs.minor }}.${{ needs.release.outputs.patch }}"/' Formula/tpw.rb
-          sed -i '' 's/sha256 ".*"/sha256 "${{ needs.build-and-upload.outputs.asset_sum }}"/' Formula/tpw.rb
+          sed -i 's/version ".*"/version "${{ needs.release.outputs.major }}.${{ needs.release.outputs.minor }}.${{ needs.release.outputs.patch }}"/' Formula/tpw.rb
+          sed -i 's/sha256 ".*"/sha256 "${{ needs.build-and-upload.outputs.asset_sum }}"/' Formula/tpw.rb
 
       - name: Commit and Push Changes
         env:
