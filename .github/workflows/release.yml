@@ -39,11 +39,11 @@ jobs:
 
       - name: Determine Archive Name
         run: |
-          echo "ARCHIVE=release-test-${{ needs.release.outputs.tag_name }}" >> $GITHUB_ENV
+          echo "ARCHIVE=tpw-${{ needs.release.outputs.tag_name }}" >> $GITHUB_ENV
 
       - name: Build Archive
         run: |
-          tar -zcvf "$ARCHIVE.tar.gz" -C target/aarch64-apple-darwin/release release-test
+          tar -zcvf "$ARCHIVE.tar.gz" -C target/aarch64-apple-darwin/release tpw
           shasum -a 256 "$ARCHIVE.tar.gz" > "$ARCHIVE.tar.gz.sha256"
           echo "ASSET=$ARCHIVE.tar.gz" >> $GITHUB_ENV
           echo "ASSET_SUM=$ARCHIVE.tar.gz.sha256" >> $GITHUB_ENV
