@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.1](https://github.com/lzt1008/tpw/compare/v0.1.0...v0.1.1) (2024-12-05)
+
+
+### Bug Fixes
+
+* **ui:** fix color of last line from yellow to magenta ([a2c7c40](https://github.com/lzt1008/tpw/commit/a2c7c400e492ff9121084a66575c6425d7a35d29))
+
 ## 0.1.0 (2024-12-05)
 
 
