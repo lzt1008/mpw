@@ -60,6 +60,7 @@ jobs:
     needs:
       - release
       - build-and-upload
+    if: ${{ needs.release.outputs.release_created }}
     steps:
       - uses: actions/checkout@v4
         with:
