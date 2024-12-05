@@ -2,6 +2,11 @@
 name = "tpw"
 version = "0.1.0"
 edition = "2021"
+license = "MIT"
+license-file = "LICENSE"
+documentation = "https://docs.rs/tpw"
+repository = "https://github.com/lzt1008/tpw"
+homepage = "https://github.com/lzt1008/tpw"
 
 [dependencies]
 clap = { version = "4.5.9", features = ["derive", "string"] }
