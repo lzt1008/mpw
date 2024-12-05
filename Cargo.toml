@@ -1,0 +1,11 @@
+[package]
+name = "core-fundation-test"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+clap = { version = "4.5.9", features = ["derive", "string"] }
+core-foundation = "0.10.0"
+itertools = "0.13.0"
+ratatui = "0.29.0"
+scopefn = { version = "0.0.2", features = ["run_if"] }
